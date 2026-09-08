@@ -6,7 +6,7 @@
 
 ## Status
 - [x] Task 1: Data preparation
-- [ ] Task 2: Tokenizer
+- [x] Task 2: Tokenizer
 - [ ] Task 3: Model
 - [ ] Task 4: Evaluation
 - [ ] Task 5: Front-end
