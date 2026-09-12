@@ -47,7 +47,7 @@ python app.py
 ```
 GenAI_Task1.ipynb        the whole notebook, Tasks 1-5
 app.py                   Gradio app
-best.pt                  best checkpoint (lowest valid loss)
+best.pt                  best checkpoint (lowest valid loss) - too big for GitHub, see model/README.md for the Drive link
 data/train.tsv           75,067 pairs
 data/valid.tsv           10,018 pairs
 tokenizer/ur_sp.model    SentencePiece, vocab 8000
@@ -95,7 +95,7 @@ results/frontend.png
 | Wiki-UQA | greedy | 3.59 | 0.207 | - | 1.03% |
 | Wiki-UQA | beam (k=4) | 4.36 | 0.211 | - | 0.87% |
 
-BLEU is lower than the 6-13 the assignment expects. Best checkpoint was epoch 5 of 10, so it's a bit undertrained. Not a bug though - a bug would give near-0.
+BLEU is lower than the 6-13 the assignment expects. Best checkpoint was epoch 5 of 10 - training loss kept falling past that point while validation loss climbed back up, a clear overfitting signal for this data size. Not a bug though - a bug would give near-0.
 
 ### Human eval (50 samples, independent ratings)
 
